@@ -1,8 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
 body {
 }
 
 #homepage-container {
   text-align: center;
+  width: 100%;
+}
+
+#heading {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 40px;
 }
 
 li {
@@ -10,43 +18,67 @@ li {
 }
 
 a {
+  color: #272927;
   text-decoration: none;
 }
 
 #logo {
-  width: 500px;
-  height: 500px;
-}
-
-@media (min-width: 700px) {
-
+  width: 300px;
+  height: 300px;
+  margin: 0px;
 }
 
 .auth {
-  font-size: 20px;
-  font-family: ;
-  background-color: #00FF98;
+  cursor: pointer;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  background-color: #43bd8e;
   width: 300px;
   height: 75px;
   margin: 50px auto;
   border-radius: 10px;
   display: block;
-  border: 5px solid black;
-  box-shadow: 0 20px 20px -15px #2A333B;
+  border: 5px solid #272927;
+  box-shadow: 0 20px 20px -15px #040203;
+  transition: 2s;
+  margin-top: 0;
 }
- /* color: lightness($dark, 20%)
-  font-size: 30px
-  font-weight: bold
-  line-height: 75px
-  text-align: center
-  cursor: pointer
-  box-shadow: 0 20px 20px -15px alpha($dark, 70%), inset 0 -5px alpha($dark, 40%)
-  transition: all 0.3s cubic-bezier(0,.35,.5,1)
-  &:hover
-    color: lightness($dark, 0%)
-    transform: scale(1.03)
-    box-shadow: 0 22px 22px -15px alpha($dark, 70%), inset 0 -5px alpha($dark, 40%)
-  &:focus,
-  &:active
-    transform: scale(1)
-    box-shadow: 0 17px 17px -15px alpha($dark, 70%), inset 0 -3px alpha($dark, 40%)*/
+
+.auth:hover {
+  transition: 1s;
+  background-color: #467b8d
+}
+
+@media (min-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #logo {
+    width: 300px;
+    height: 300px;
+  }
+
+  #heading {
+    font-size: 50px;
+  }
+
+  .auth {
+    cursor: pointer;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    background-color: #43bd8e;
+    width: 300px;
+    height: 75px;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: block;
+    border: 5px solid #272927;
+    box-shadow: 0 20px 20px -15px #040203;
+    transition: 2s;
+    margin-top: 0;
+  }
+}
