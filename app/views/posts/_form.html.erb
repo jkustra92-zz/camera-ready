@@ -1,0 +1,8 @@
+<%=link_to "back to home", user_posts_path%>
+<br>
+<br>
+<%= form_for [@user, @post] do |form| %>
+  <%= form.file_field :image%><br>
+  caption: <%= form.text_field :caption %><br><br>
+  <%= form.submit %>
+<% end %>
