@@ -1,0 +1,7 @@
+<%=link_to "back to all posts", user_path(@user) %>
+<br>
+<div id = "show-container">
+  <%= image_tag(@post.image.url) %>
+  <p><%= @post.caption %></p>
+</div>
+<button id = "delete-button"><%=link_to 'Delete', user_post_path(@user, @post), :method => 'delete'%></button>

@@ -1,11 +1,9 @@
 class PostsController < ApplicationController
-  before_action :set_user, only: [:new, :create]
-  def index
-    
-  end
+  before_action :set_user, only: [:new, :create, :show, :destroy]
+  before_action :set_post, only: [:show, :destroy]
 
   def show
-    
+
   end
 
   def new
@@ -29,9 +27,21 @@ class PostsController < ApplicationController
     redirect_to @user
   end
 
+  def destroy
+    puts "========="
+    puts "i'm here!"
+    puts "========="
+    @post.destroy
+    redirect_to @user
+  end
+
   private 
   def set_user
     @user = User.find(params[:user_id])   
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
   end
 
   def post_params  

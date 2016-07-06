@@ -3,7 +3,9 @@ class UsersController < ApplicationController
   def show
     puts "========"
     p @user
+    p @user.posts
     puts "========"
+    @posts = @user.posts
   end
 
   private 
