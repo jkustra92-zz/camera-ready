@@ -18,13 +18,13 @@ class PostsController < ApplicationController
     puts post_params
     puts "========"
     @post = Post.new(post_params)
-    @user.posts << @post
-    puts "=========="
-    p @user
-    puts "=========="
-    p @user.posts
-    puts "=========="
-    redirect_to @user
+     if @post.save
+      @user.posts << @post
+      redirect_to @user
+    else
+      flash[:error] = "something went wrong :("                                   #so if there's an issue with the form and it can't submit, this error message will post. 
+      render :action => :new
+    end
   end
 
   def destroy

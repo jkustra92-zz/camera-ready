@@ -6,5 +6,6 @@
 <% @posts.each do |post| %>
 <%= link_to image_tag(post.image.url), user_post_path(@user, post) %>
 <% end %>
-
-<%=link_to "add a new post", new_user_post_path(@user.id) %>
+<br>
+<br>
+<div id = "add-link"><button><%=link_to "add a new post", new_user_post_path(@user.id) %></button></div>
