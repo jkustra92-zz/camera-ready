@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PictureApp</title>
+  <title>camera ready</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -14,10 +14,10 @@
 <p>
 <% if user_signed_in? %>
   <div id = "logged-in-bar">
-    Logged in as <strong><%= current_user.email %></strong>
+    logged in as <strong><%= current_user.email %></strong>
     <ul>
-      <li><%= link_to 'edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
       <li><%= link_to "logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+      <li><%= link_to 'edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
     </ul>
   </div>
 <% end %>

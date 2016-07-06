@@ -1,3 +1,52 @@
 body {
-  background-color: blue;
 }
+
+#homepage-container {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  width: 500px;
+  height: 500px;
+}
+
+@media (min-width: 700px) {
+
+}
+
+.auth {
+  font-size: 20px;
+  font-family: ;
+  background-color: #00FF98;
+  width: 300px;
+  height: 75px;
+  margin: 50px auto;
+  border-radius: 10px;
+  display: block;
+  border: 5px solid black;
+  box-shadow: 0 20px 20px -15px #2A333B;
+}
+ /* color: lightness($dark, 20%)
+  font-size: 30px
+  font-weight: bold
+  line-height: 75px
+  text-align: center
+  cursor: pointer
+  box-shadow: 0 20px 20px -15px alpha($dark, 70%), inset 0 -5px alpha($dark, 40%)
+  transition: all 0.3s cubic-bezier(0,.35,.5,1)
+  &:hover
+    color: lightness($dark, 0%)
+    transform: scale(1.03)
+    box-shadow: 0 22px 22px -15px alpha($dark, 70%), inset 0 -5px alpha($dark, 40%)
+  &:focus,
+  &:active
+    transform: scale(1)
+    box-shadow: 0 17px 17px -15px alpha($dark, 70%), inset 0 -3px alpha($dark, 40%)*/
