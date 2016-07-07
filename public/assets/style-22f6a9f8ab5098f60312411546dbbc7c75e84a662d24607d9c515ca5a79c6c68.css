@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+@import url(https://fonts.googleapis.com/css?family=Spinnaker);
+
+/*HOMEPAGE*/
+
+#homepage-container {
+  text-align: center;
+  width: 100%;
+}
+
+#heading {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 40px;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  font-family: 'Spinnaker', sans-serif;
+  color: #B5A2C8;
+  font-size: 15px;
+}
+
+a {
+  color: #272927;
+  text-decoration: none;
+}
+
+#logo {
+  width: 300px;
+  height: 300px;
+  margin: 0px;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  background-color: #43bd8e;
+  width: 300px;
+  height: 75px;
+  margin: 50px auto;
+  border-radius: 10px;
+  display: block;
+  border: 5px solid #272927;
+  box-shadow: 0 20px 20px -15px #040203;
+  transition: 2s;
+  margin-top: 1;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.button:hover {
+  transition: 1s;
+  background-color: #467b8d
+}
+
+.addnewbutton {
+  font-size: 3rem;
+}
+
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius:0; 
+  border-radius:0;
+}
+
+/*LOG IN - SIGNUP SCREEN*/
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 70px;
+  color: #43bd8e;
+}
+
+#loginsignup-container {
+  text-align: center;
+}
+
+.check_box {
+  width: 20px;
+  height: 20px;
+}
+
+.input {
+  height: 75px;
+  width: 300px;
+  font-size: 30px;
+  font-color: #040203;
+  font-family: 'Spinnaker', sans-serif;
+}
+
+.label {
+  font-family: 'Spinnaker', sans-serif;
+  color: #43bd8e;
+  font-size: 20px;
+}
+
+/*LOGGED IN USER*/
+
+#posts-container {
+  text-align: center;
+}
+
+/*ADDING A NEW IMAGE*/
+
+input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-button {
+  border: 5px solid #467b8d;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#form-container {
+  text-align: center;
+}
+
+/*SEEING A POST*/
+
+#show-container {
+  text-align: center;
+}
+
+.caption {
+  font-family: 'Spinnaker', sans-serif;
+  color: #B5A2C8;
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+
+.post-img {
+  margin-top: 2em;
+  border: 5px solid #467b8d;
+  border-radius: 10px;
+}
+
+.delete-button {
+  cursor: pointer;
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  background-color: #43bd8e;
+  width: 50px;
+  height: 40px;
+  margin: 50px auto;
+  border-radius: 10px;
+  display: block;
+  border: 5px solid #272927;
+  box-shadow: 0 20px 20px -15px #040203;
+  transition: 2s;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+/*NAV BAR THING?*/
+
+ #logged-in-bar {
+   text-align: center;
+  }
+
+.useremail {
+  color: #B5A2C8;
+}
+
+.navbar-link{
+    color: #467b8d;
+  }
+
+/*EDIT PROFILE*/
+
+#edit-container {
+  text-align: center;
+}
+
+/*M E D I A   Q U E R I E S*/
+
+
+@media (min-width: 700px) {
+
+  /*HOMEPAGE*/
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #logged-in-bar {
+   margin-top: 2em;
+   margin-bottom: 2em;
+  }
+
+  #logo {
+    width: 300px;
+    height: 300px;
+  }
+
+  #heading {
+    font-size: 50px;
+  }
+
+  #loginsignup-container {
+    margin-top: 3em;
+  }
+
+  .custom-button {
+    cursor: pointer;
+    /*font-size: 50px;*/
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    background-color: #43bd8e;
+    width: 300px;
+    height: 75px;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: block;
+    border: 5px solid #272927;
+    box-shadow: 0 20px 20px -15px #040203;
+    transition: 2s;
+    margin-top: 0;
+  }
+}
+
