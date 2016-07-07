@@ -28,6 +28,11 @@ gem "paperclip", "~> 5.0.0"
 gem 'devise'
 
 gem 'ngrok-tunnel'
+
+source 'https://rubygems.org'
+ruby '2.2.3' 
+
+gem 'rails_12factor', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
