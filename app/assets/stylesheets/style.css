@@ -60,8 +60,10 @@ a {
   background-color: #467b8d
 }
 
-input[type="submit"]{
+input {
   -webkit-appearance: none;
+  -webkit-border-radius:0; 
+  border-radius:0;
 }
 
 /*LOG IN - SIGNUP SCREEN*/
