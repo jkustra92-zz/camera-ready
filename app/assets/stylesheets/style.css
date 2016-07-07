@@ -4,6 +4,10 @@
 
 /*HOMEPAGE*/
 
+* {
+  -webkit-appearance: none;
+}
+
 #homepage-container {
   text-align: center;
   width: 100%;
