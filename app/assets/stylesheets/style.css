@@ -2,18 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
 @import url(https://fonts.googleapis.com/css?family=Spinnaker);
 
-body {
-
-}
-
-p {
-
-}
-
-@font-face {
-  font-family: "fontello"
-  font-url("fontello.ttf", "fonts");
-}
 /*HOMEPAGE*/
 
 #homepage-container {
