@@ -51,7 +51,7 @@ a {
   border: 5px solid #272927;
   box-shadow: 0 20px 20px -15px #040203;
   transition: 2s;
-  margin-top: 0;
+  margin-top: 1;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -59,6 +59,10 @@ a {
 .button:hover {
   transition: 1s;
   background-color: #467b8d
+}
+
+.addnewbutton {
+  font-size: 3rem;
 }
 
 input {
@@ -214,7 +218,7 @@ input[type="file"] {
 
   .custom-button {
     cursor: pointer;
-    font-size: 50px;
+    /*font-size: 50px;*/
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     background-color: #43bd8e;
