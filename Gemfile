@@ -27,7 +27,8 @@ gem "paperclip", "~> 5.0.0"
 
 gem 'devise'
 
-gem 'ngrok-tunnel'
+gem 'aws-sdk', '~> 2.3'
+
 
 source 'https://rubygems.org'
 ruby '2.2.3' 
