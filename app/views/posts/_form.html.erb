@@ -1,8 +1,13 @@
-<%=link_to "back to home", user_posts_path%>
+<%=link_to "back to home", user_path(@user.id), :class => "label"%>
 <br>
 <br>
-<%= form_for [@user, @post] do |form| %>
-  <%= form.file_field :image%><br>
-  caption: <%= form.text_field :caption %><br><br>
-  <%= form.submit %>
-<% end %>
+<div id = "form-container">
+  <%= form_for [@user, @post] do |form| %>
+    <label for="post_image"><%=image_tag "upload.png", :class => "file-button" %></label>
+    <%= form.file_field :image%><br>
+    <label class = "label" for="post_caption">caption</label>
+    <br>
+    <%= form.text_field :caption, :class => "input" %><br><br>
+    <%= form.submit :class => "button" %>
+  <% end %>
+</div>

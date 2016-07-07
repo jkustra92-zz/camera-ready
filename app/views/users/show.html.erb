@@ -1,8 +1,6 @@
-<p> <%=@user.email%>'s posts</p>
-
-<% @posts.each do |post| %>
-<%= link_to image_tag(post.image.url), user_post_path(@user, post) %>
-<% end %>
-<br>
-<br>
-<div id = "add-link"><button><%=link_to "add a new post", new_user_post_path(@user.id) %></button></div>
+<div id = "posts-container">
+  <button class = "button"><%=link_to "add a new post", new_user_post_path(@user.id)%></button>
+  <% @posts.each do |post| %>
+    <%= link_to image_tag(post.image.url), user_post_path(@user, post) %>
+  <% end %>
+</div>

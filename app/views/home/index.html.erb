@@ -3,7 +3,7 @@
   <%=image_tag 'logo', :id => 'logo' %>
   <% if !user_signed_in? %>
   <br>
-  <button class = "auth"><%=link_to "log in", new_user_session_path%></button>
-  <button class = "auth"><%=link_to "sign up", new_user_registration_path%></button>
+  <button class = "button"><%=link_to "log in", new_user_session_path%></button>
+  <button class = "button"><%=link_to "sign up", new_user_registration_path%></button>
   <% end %>
 </div>
