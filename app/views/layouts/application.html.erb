@@ -15,7 +15,7 @@
 <% if user_signed_in? %>
   <div id = "logged-in-bar">
     <ul>
-      <li><strong><%= current_user.email %>&nbsp;|</strong>&nbsp;</li>
+      <li><a href="/users/<%=current_user.id%>"><strong class = "useremail"><%= current_user.email %>&nbsp;|</strong>&nbsp;</a></li>
       <li><%= link_to 'edit profile', edit_user_registration_path, :class => 'navbar-link' %>&nbsp;<strong>|</strong>&nbsp;</li>
        <li><%= link_to "logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
     </ul>

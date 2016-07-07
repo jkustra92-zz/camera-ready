@@ -172,7 +172,11 @@ input[type="file"] {
    text-align: center;
   }
 
-  .nav-bar-link {
+.useremail {
+  color: #B5A2C8;
+}
+
+.navbar-link{
     color: #467b8d;
   }
 
