@@ -1,7 +1,8 @@
-<%=link_to "back to home", user_path(@user.id), :class => "label"%>
-<br>
-<br>
+
 <div id = "form-container">
+  <%=link_to "back to home", user_path(@user.id), :class => "label"%>
+  <br>
+  <br>
   <%= form_for [@user, @post] do |form| %>
     <label for="post_image"><%=image_tag "upload.png", :class => "file-button" %></label>
     <%= form.file_field :image%><br>

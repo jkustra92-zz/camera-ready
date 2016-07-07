@@ -1,6 +1,7 @@
-<%=link_to "back to home", home_index_path, :class => "label" %>
 
 <div id = "loginsignup-container">
+  <%=link_to "back to home", home_index_path, :class => "label"%>
+
   <h2>log in</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
