@@ -42,4 +42,14 @@ Rails.application.configure do
 
   # some additions to include devise 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.paperclip_defaults = {                         #this is what i needed to do to get paperclip to work with S3. 
+    storage: :s3,                                       #rather than writing to the application, paperclip will now access my S3 bucket and store attached files there!
+    s3_credentials: {
+    bucket: ENV.fetch('S3_BUCKET_NAME'),
+    access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+    secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+    s3_region: ENV.fetch('AWS_REGION'),
+  }
+}
 end

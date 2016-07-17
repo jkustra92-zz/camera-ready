@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     p @user
     p @user.posts
     puts "========"
-    @posts = @user.posts
+    @posts = @user.posts                          #find the user and show all their posts. it's kinda like a homepage for a logged in user.
   end
 
   private 
