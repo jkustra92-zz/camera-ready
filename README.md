@@ -9,6 +9,7 @@ An image uploading service that allows users to add images directly from their d
 ### Tech used
 - Ruby
 - Rails
+- Paperclip gem
 - HTML
 - CSS
 - AWS - Specifically S3
