@@ -1,28 +1,24 @@
-== README
+# camera-ready
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[it lives here!](https://camera-ready.herokuapp.com/)
 
-Things you may want to cover:
+### Description
 
-* Ruby version
+An image uploading service that allows users to add images directly from their devices and store them within the application, courtesy of Amazon's S3 service!
 
-* System dependencies
+### Tech used
+- Ruby
+- Rails
+- HTML
+- CSS
+- AWS - Specifically S3
 
-* Configuration
+### Features
+- User authentication allows for separation of users and their images. Users can also update their profiles on the site.
+- Use of S3 allows persistance of images. Users can log out and have their images be there when they log in again!
+- Paperclip allows users to select files off of their computer and makes default sizing so all the images are consistent.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+### Future Implementations
+- Interactivity between users! Users can view each other's profiles and like one another's photos!
+- Filters! Like a popular photo app, let users put filters on their pictures before uploading.
+- Nav bar to place edit profile and logout links.
